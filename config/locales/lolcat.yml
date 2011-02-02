@@ -1,0 +1,24 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    feedsucker_feeds:
+      title: Feedsucker Feeds
+  admin:
+    feedsucker_feeds:
+      index:
+        title: Feedsucker Feeds
+        create_new: CREATE NEW Feedsucker Feed
+        reorder: REORDR Feedsucker Feeds
+        reorder_done: DUN REORDERIN Feedsucker Feeds
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Feedsucker Feeds YET. CLICK "CREATE NEW Feedsucker Feed" 2 ADD UR FURST feedsucker feed.
+      feedsucker_feed:
+        view_live_html: VIEW DIS feedsucker feed LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS feedsucker feed
+        delete: REMOOV DIS feedsucker feed FOREVR
+  feedsucker_feeds:
+    show:
+      other: OTHR Feedsucker Feeds

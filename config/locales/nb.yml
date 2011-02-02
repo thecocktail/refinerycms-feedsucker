@@ -1,0 +1,20 @@
+nb:
+  plugins:
+    feedsucker_feeds:
+      title: Feedsucker Feeds
+  admin:
+    feedsucker_feeds:
+      index:
+        title: Feedsucker Feeds
+        create_new: Lag en ny Feedsucker Feed
+        reorder: Endre rekkefølgen på Feedsucker Feeds
+        reorder_done: Ferdig å endre rekkefølgen Feedsucker Feeds
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Feedsucker Feeds enda. Klikk på "Lag en ny Feedsucker Feed" for å legge til din første feedsucker feed.
+      feedsucker_feed:
+        view_live_html: Vis hvordan denne feedsucker feed ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne feedsucker feed
+        delete: Fjern denne feedsucker feed permanent
+  feedsucker_feeds:
+    show:
+      other: Andre Feedsucker Feeds

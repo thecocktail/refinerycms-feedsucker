@@ -1,0 +1,24 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    feedsucker_feeds:
+      title: Feedsucker Feeds
+  admin:
+    feedsucker_feeds:
+      index:
+        title: Feedsucker Feeds
+        create_new: Add New Feedsucker Feed
+        reorder: Reorder Feedsucker Feeds
+        reorder_done: Done Reordering Feedsucker Feeds
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Feedsucker Feeds yet. Click "Add New Feedsucker Feed" to add your first feedsucker feed.
+      feedsucker_feed:
+        view_live_html: View this feedsucker feed live <br/><em>(opens in a new window)</em>
+        edit: Edit this feedsucker feed
+        delete: Remove this feedsucker feed forever
+  feedsucker_feeds:
+    show:
+      other: Other Feedsucker Feeds

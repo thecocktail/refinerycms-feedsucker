@@ -1,0 +1,29 @@
+<%= form_for [:admin, @feedsucker_feed] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+    :object => @feedsucker_feed,
+    :include_object_name => true
+  } %>
+  
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :nicetitle -%>
+    <%= f.text_field :nicetitle -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :url -%>
+    <%= f.text_field :url -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.feedsucker_feeds.feedsucker_feed'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @feedsucker_feed.title)
+              } %>
+<% end -%>

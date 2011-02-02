@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="feedsucker_feeds">
+    <% @feedsucker_feeds.each do |feedsucker_feed| %>
+      <li>
+        <%= link_to feedsucker_feed.title, feedsucker_feed_url(feedsucker_feed) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

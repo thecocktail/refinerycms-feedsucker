@@ -1,0 +1,56 @@
+<div id='records'>
+  <% if searching? %>
+    <h2><%= t('results_for', :scope => 'shared.admin.search', :query => params[:search]) %></h2>
+  <% end %>
+  <% if @feedsucker_feeds.any? %>
+    <%= will_paginate @feedsucker_feeds %>
+
+    <%= render :partial => "sortable_list" %>
+
+    <%= will_paginate @feedsucker_feeds %>
+  <% else %>
+    <p>
+      <% unless searching? %>
+        <strong>
+          <%= t('.no_items_yet') %>
+        </strong>
+      <% else %>
+        <%= t('no_results', :scope => 'shared.admin.search') %>
+      <% end %>
+    </p>
+  <% end %>
+</div>
+<div id='actions'>
+  <ul>
+    <% if Admin::FeedsuckerFeedsController.searchable? %>
+      <li>
+        <%= render :partial => "/shared/admin/search",
+                    :locals => {
+                      :url => admin_feedsucker_feeds_url
+                    } %>
+      </li>
+    <% end %>
+    <li>
+      <%= link_to t('.create_new'), new_admin_feedsucker_feed_url,
+                   :class => "add_icon" %>
+    </li>
+  <% if !searching? and FeedsuckerFeed.count > 1 and Admin::FeedsuckerFeedsController.sortable? %>
+    <li>
+      <%= link_to t('.reorder', :what => "Feedsucker Feeds"),
+                   admin_feedsucker_feeds_url,
+                   :id => "reorder_action",
+                   :class => "reorder_icon" %>
+
+      <%= link_to t('.reorder_done', :what => "Feedsucker Feeds"),
+                   admin_feedsucker_feeds_url,
+                   :id => "reorder_action_done",
+                   :style => "display: none;",
+                   :class => "reorder_icon" %>
+    </li>
+  <% end %>
+  </ul>
+</div>
+<%= render :partial => "/shared/admin/make_sortable",
+            :locals => {
+              :tree => false
+            } if !searching? and FeedsuckerFeed.count > 1 %>

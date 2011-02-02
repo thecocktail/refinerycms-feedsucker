@@ -1,0 +1,24 @@
+es:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    feedsucker_feeds:
+      title: Feeds
+  admin:
+    feedsucker_feeds:
+      index:
+        title: Feeds
+        create_new: Añadir nuevo feed
+        reorder: Reordenar feeds
+        reorder_done: Ya he terminado 
+        sorry_no_results: ¡Lo sentimos, no hay resultados!
+        no_items_yet: Todavía no se ha creado ningún feed. Haz clic en  "Añadir nuevo feed" para crear el primero
+      feedsucker_feed:
+        view_live_html: Ver este feed en la página </em>(en una nueva ventana)</em>
+        edit: Editar este feed
+        delete: Eliminar este feed
+  feedsucker_feeds:
+    show:
+      other: Otros feeds

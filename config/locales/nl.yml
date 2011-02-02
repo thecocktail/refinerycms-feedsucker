@@ -1,0 +1,20 @@
+nl:
+  plugins:
+    feedsucker_feeds:
+      title: Feedsucker Feeds
+  admin:
+    feedsucker_feeds:
+      index:
+        title: Feedsucker Feeds
+        create_new: Maak een nieuwe Feedsucker Feed
+        reorder: Wijzig de volgorde van de Feedsucker Feeds
+        reorder_done: Klaar met het wijzingen van de volgorde van de Feedsucker Feeds
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Feedsucker Feeds. Druk op 'Maak een nieuwe Feedsucker Feed' om de eerste aan te maken.
+      feedsucker_feed:
+        view_live_html: Bekijk deze feedsucker feed op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze feedsucker feed
+        delete: Verwijder deze feedsucker feed voor eeuwig
+  feedsucker_feeds:
+    show:
+      other: Andere Feedsucker Feeds

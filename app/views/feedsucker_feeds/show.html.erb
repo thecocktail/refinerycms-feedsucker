@@ -1,0 +1,40 @@
+<% content_for :body_content_title do %>
+  <%= @feedsucker_feed.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  
+  <section>
+    <h1>Title</h1>
+<p>    <%=raw @feedsucker_feed.title %>
+</p>
+  </section>
+  
+  <section>
+    <h1>Nicetitle</h1>
+<p>    <%=raw @feedsucker_feed.nicetitle %>
+</p>
+  </section>
+  
+  <section>
+    <h1>Url</h1>
+<p>    <%=raw @feedsucker_feed.url %>
+</p>
+  </section>
+  
+<% end %>
+
+<% content_for :body_content_right do %>
+<aside>
+  <h2><%= t('.other') %></h2>
+  <ul id="feedsucker_feeds">
+    <% @feedsucker_feeds.each do |feedsucker_feed| %>
+      <li>
+        <%= link_to feedsucker_feed.title, feedsucker_feed_url(feedsucker_feed) %>
+      </li>
+    <% end %>
+  </ul>
+</aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
