@@ -2,7 +2,7 @@ class CreateFeedsuckerPosts < ActiveRecord::Migration
 
   def self.up
     create_table :feedsucker_posts do |t|
-      t.string :feedsucker_feed_id
+      t.id :feedsucker_feed_id
       t.string :blog_title
       t.string :blog_url
       t.string :title
