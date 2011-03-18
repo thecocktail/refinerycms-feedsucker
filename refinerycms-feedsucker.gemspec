@@ -1,5 +1,7 @@
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
+  s.author = 'The Cocktail'
+  s.homepage = 'http://github.com/thecocktail/refinerycms-feedsucker'
   s.name              = 'refinerycms-feedsucker'
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Feedsucker engine for Refinery CMS'
